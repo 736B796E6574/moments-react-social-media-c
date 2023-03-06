@@ -1,85 +1,69 @@
-.App {
-    font-family: "DM Sans", sans-serif;
-    background-color: #f8f8f8;
-    min-height: 100vh;
+.Button {
+    font-size: 0.8rem;
+    align-self: center;
+    border-radius: 100px;
+    border-color: transparent;
+    padding: 4px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    min-width: 75px;
 }
 
-.Main {
-    padding-top: 81px;
+.Button:hover {
+    opacity: 0.8;
+    border-color: transparent;
+    cursor: pointer;
 }
 
-.Content {
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #dadadf;
+.Button:hover:active {
+    background-color: #2142b2 !important;
 }
 
-.FillerImage {
-    object-fit: cover;
-    height: 100%;
+.Button:active {
+    background-color: #2142b2 !important;
+}
+
+.Button:focus {
+    background-color: #2142b2;
+}
+
+.Wide {
+    padding: 10px 50px;
     width: 100%;
 }
 
-.Image {
-    max-height: 40vh;
-    max-width: 100%;
-    object-fit: contain;
+.Blue,
+.BlueOutline:hover,
+.Bright:hover {
+    background-color: #2142b2;
+    color: #ffffff;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-a {
-    color: #555555;
-    transition: color ease-in-out 0.3s;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:hover i {
-    color: #2142b2;
-    transition: color ease-in-out 0.3s;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-i {
-    color: #cfced3;
-    font-size: 1.6rem;
-    padding: 7px;
-    vertical-align: middle;
-}
-
-i:hover {
-    cursor: pointer;
-    transition: color ease-in-out 0.3s;
+.BlueOutline,
+.Blue:hover {
+    /* border: 1px solid #2142b2; */
+    background-color: #ffffff;
     color: #2142b2;
 }
 
-figure {
-    text-align: center;
-    display: inline-block;
+.Black,
+.BlackOutline:hover {
+    /* background-color: #242a3d;
+    color: white; */
+    background-color: #242a3d;
+    color: aliceblue;
 }
 
-/* scrollbar */
-*::-webkit-scrollbar {
-    width: 5px;
+.Black:hover,
+.BlackOutline {
+    /* background-color: #dadadf;
+    color: #242a3d;
+    border-color: #242a3d; */
+    background-color: aliceblue;
+    color: #242a3d;
 }
 
-*::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-    background: #555;
+.Bright {
+    background-color: #2ed9ff;
+    color: #2142b2;
 }
