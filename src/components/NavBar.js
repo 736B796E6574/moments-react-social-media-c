@@ -24,7 +24,7 @@ const NavBar = () => {
     }
     document.addEventListener("mouseup", handleClickOutside)
     return document.removeEventListener("mouseup", handleClickOutside)
-  })
+  },[ref])
 
   const handleSignOut = async () => {
     try {
